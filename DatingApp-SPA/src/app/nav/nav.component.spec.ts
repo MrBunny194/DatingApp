@@ -1,22 +1,22 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { ValueComponent } from './value.component';
+import { NavComponent } from './nav.component';
 
-describe('a value component', () => {
-	let component: ValueComponent;
+describe('a nav component', () => {
+	let component: NavComponent;
 
 	// register all needed dependencies
 	beforeEach(() => {
 		TestBed.configureTestingModule({
 			providers: [
-				ValueComponent
+				NavComponent
 			]
 		});
 	});
 
 	// instantiation through framework injection
-	beforeEach(inject([ValueComponent], (ValueComponent) => {
-		component = ValueComponent;
+	beforeEach(inject([NavComponent], (NavComponent) => {
+		component = NavComponent;
 	}));
 
 	it('should have an instance', () => {
